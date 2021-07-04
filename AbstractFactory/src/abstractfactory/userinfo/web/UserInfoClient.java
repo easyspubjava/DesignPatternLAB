@@ -35,6 +35,7 @@ public class UserInfoClient {
 		DaoFactory daoFactory = null;
 		UserInfoDao userInfoDao = null;
 		ProductDao productDao = null;
+	
 		
 		
 		if(dbType.equals("ORACLE")){
