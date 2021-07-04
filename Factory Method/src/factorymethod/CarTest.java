@@ -13,7 +13,8 @@ public class CarTest {
 		Car myCar = factory.returnMyCar("Tomas");
 		Car hisCar = factory.returnMyCar("Tomas");
 		System.out.println(myCar == hisCar);
-				
+		
+		
 	}
 
 }
