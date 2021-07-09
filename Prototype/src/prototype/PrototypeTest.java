@@ -72,7 +72,6 @@ class BookShelf implements Cloneable{
 	
 }
 
-
 public class PrototypeTest {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
