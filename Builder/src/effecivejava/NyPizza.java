@@ -7,7 +7,7 @@ public class NyPizza extends Pizza{
 	public enum Size { SMALL, MEDIUM, LARGE};
 	private final Size size;
 	
-	public static class Builder extends Pizza.Builder<Builder> {
+	public static class Builder extends Pizza.Builder {
 			private final Size size;
 			
 			public Builder(Size size) {
@@ -19,12 +19,10 @@ public class NyPizza extends Pizza{
 			}
 			
 			protected Builder self() {return this;}
-			
 	}
 	
 	private NyPizza(Builder builder) {
 		super(builder);
 		size = builder.size;
 	}
-	
 }

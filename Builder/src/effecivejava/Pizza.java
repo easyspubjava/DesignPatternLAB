@@ -9,19 +9,22 @@ public abstract class Pizza {
 	public enum Topping { HAM, MUSHROOM, ONION, PEPPER, SAUSAGE};
 	final Set<Topping> toppings;
 	
-	abstract static class Builder<T extends Builder<T>> {
+	abstract static class Builder {
 		EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
 		
-		public T addTopping(Topping topping) {
+		public Builder addTopping(Topping topping) {
 			toppings.add(Objects.requireNonNull(topping));
+			return self();
+		}
+		public Builder sauceInside() { 
 			return self();
 		}
 		
 		abstract Pizza build();
-		protected abstract T self();
+		protected abstract Builder self();
 	}
 	
-	Pizza(Builder<?> builder){
+	Pizza(Builder builder){
 		
 		toppings = builder.toppings.clone();
 	}

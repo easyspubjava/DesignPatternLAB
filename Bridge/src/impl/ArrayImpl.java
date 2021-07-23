@@ -38,7 +38,4 @@ public class ArrayImpl<T> implements AbstractList<T> {
 		
 		return array.get(i);
 	}
-
-	
-	
 }

@@ -7,6 +7,4 @@ public interface AbstractList<T> {
 	public int insertElement(T obj, int i);
 	public T getElement(int i);
 	public int getElementSize();
-	 
-	
 }

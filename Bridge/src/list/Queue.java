@@ -16,6 +16,5 @@ public class Queue<T> extends List<T> {
 	public T deQueue() {
 		return impl.deleteElement(0);
 	}
-
 	
 }
