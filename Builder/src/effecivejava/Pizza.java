@@ -32,5 +32,4 @@ public abstract class Pizza {
 	public String toString() {
 		return toppings.toString();
 	}
-	
 }
